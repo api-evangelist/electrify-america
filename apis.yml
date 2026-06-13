@@ -1,0 +1,153 @@
+aid: electrify-america
+url: https://raw.githubusercontent.com/api-evangelist/electrify-america/refs/heads/main/apis.yml
+name: Electrify America
+kind: company
+description: >-
+  Electrify America is the largest open EV fast-charging network in the United
+  States, operating more than 5,600 DC fast chargers at over 1,080 locations
+  across the US and Canada. Subsidiary of Volkswagen Group of America, the
+  network offers charging speeds up to 350 kW and supports CCS, CHAdeMO, and
+  NACS connectors. Electrify America provides REST APIs through a partner
+  developer portal that enables automotive OEMs and enterprise integrators to
+  locate charging stations, check real-time charger availability, retrieve
+  session pricing, and manage charging sessions. Authentication is handled via
+  OAuth2 / Auth0. A consumer-facing mobile app (iOS/Android) provides
+  pass-based subscription plans (Pass and Pass+) with per-kWh pricing, and the
+  Plug&Charge standard (ISO 15118) is supported at all stations for
+  certificate-based auto-authentication.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Electric Vehicles
+  - EV Charging
+  - Charging Stations
+  - DC Fast Charging
+  - Plug and Charge
+  - Automotive
+  - Energy
+  - Transportation
+  - Mobility
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+apis:
+  - aid: electrify-america:stations-api
+    name: Electrify America Stations API
+    description: >-
+      REST API for locating and querying Electrify America charging stations.
+      Enables partners and OEM integrators to search for stations by geographic
+      area or coordinates, retrieve station details (address, connectors,
+      amenities), and filter by connector type (CCS, CHAdeMO, NACS) or charging
+      speed. Access requires OAuth2 partner credentials issued through the
+      Electrify America developer portal.
+    humanURL: https://developer.electrifyamerica.com/
+    baseURL: https://api.electrifyamerica.com
+    tags:
+      - Charging Stations
+      - Location
+      - Station Search
+      - Connectors
+    properties:
+      - type: Documentation
+        url: https://developer.electrifyamerica.com/
+      - type: Authentication
+        url: https://developer.electrifyamerica.com/
+  - aid: electrify-america:availability-api
+    name: Electrify America Availability API
+    description: >-
+      Real-time charger availability API that returns live connector status
+      (available, in-use, faulted, offline) for individual charging stations
+      and EVSE units. Used by automotive OEM in-vehicle navigation and mobile
+      app partners to surface live availability before and during a journey.
+      Requires OAuth2 partner credentials.
+    humanURL: https://developer.electrifyamerica.com/
+    baseURL: https://api.electrifyamerica.com
+    tags:
+      - Real-Time
+      - Availability
+      - Charger Status
+      - EVSE
+    properties:
+      - type: Documentation
+        url: https://developer.electrifyamerica.com/
+      - type: PressRelease
+        title: Electrify America Real-Time Charging Availability
+        url: https://media.electrifyamerica.com/releases/273
+  - aid: electrify-america:pricing-api
+    name: Electrify America Pricing API
+    description: >-
+      API providing per-session and per-kWh pricing data for Electrify America
+      charging stations. Supports time-of-use (TOU) pricing retrieval so
+      partners and in-vehicle systems can display accurate session cost estimates
+      before a driver plugs in. Pricing varies by location, charger, and time
+      of day.
+    humanURL: https://developer.electrifyamerica.com/
+    baseURL: https://api.electrifyamerica.com
+    tags:
+      - Pricing
+      - Time-of-Use
+      - Session Cost
+      - kWh Rates
+    properties:
+      - type: Documentation
+        url: https://developer.electrifyamerica.com/
+      - type: Pricing
+        url: https://www.electrifyamerica.com/pricing/
+  - aid: electrify-america:sessions-api
+    name: Electrify America Sessions API
+    description: >-
+      API for initiating, monitoring, and retrieving data for EV charging
+      sessions. Enables partner applications to start and stop charging
+      sessions, poll live session telemetry (energy delivered, duration, cost),
+      and retrieve historical session records. Plug&Charge (ISO 15118) is
+      supported at all stations and leverages the Hubject Intercharge PKI for
+      certificate-based authentication as an alternative to session API token
+      flows.
+    humanURL: https://developer.electrifyamerica.com/
+    baseURL: https://api.electrifyamerica.com
+    tags:
+      - Charging Sessions
+      - Plug and Charge
+      - ISO 15118
+      - Session Management
+      - Telemetry
+    properties:
+      - type: Documentation
+        url: https://developer.electrifyamerica.com/
+      - type: Authentication
+        url: https://developer.electrifyamerica.com/
+common:
+  - type: Website
+    url: https://www.electrifyamerica.com
+  - type: Portal
+    url: https://developer.electrifyamerica.com
+  - type: SignUp
+    url: https://developer.electrifyamerica.com
+  - type: MobileApp
+    title: Electrify America iOS App
+    url: https://apps.apple.com/us/app/electrify-america/id1458030456
+  - type: MobileApp
+    title: Electrify America Android App
+    url: https://play.google.com/store/apps/details?id=com.ea.evowner
+  - type: Pricing
+    url: https://www.electrifyamerica.com/pricing/
+  - type: StatusPage
+    url: https://cloud.email.electrifyamerica.com/network-and-planned-maintenance
+  - type: Newsroom
+    url: https://media.electrifyamerica.com/
+  - type: FAQ
+    url: https://www.electrifyamerica.com/mobile-faq/
+  - type: StationLocator
+    url: https://www.electrifyamerica.com/locate-charger/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/electrify-america
+  - type: Twitter
+    url: https://x.com/ElectrifyAm
+  - type: Plans
+    url: plans/plans.yml
+  - type: RateLimits
+    url: rate-limits/rate-limits.yml
+  - type: FinOps
+    url: finops/finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

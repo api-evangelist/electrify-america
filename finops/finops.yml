@@ -1,0 +1,44 @@
+finops:
+  description: >-
+    Electrify America operates a dual-sided commercial model: a consumer
+    charging subscription business and a partner/OEM API integration business.
+    Consumer pricing is usage-based (per kWh) with optional monthly membership
+    tiers (Pass, Pass+). Partner API access for OEM and enterprise integrators
+    is governed by commercial agreements negotiated directly with Electrify
+    America; no self-serve API pricing is publicly listed. Cost drivers for
+    API consumers are primarily contractual rather than metered by call volume.
+  model: subscription + partner contract
+  consumerPricing:
+    - tier: Guest (no membership)
+      fee: none
+      usageCost: highest per-kWh rate; displayed at charger and in app
+    - tier: Pass (free membership)
+      fee: $0/month
+      usageCost: discounted per-kWh rate vs. guest; exact rate varies by location
+    - tier: Pass+
+      fee: monthly subscription (amount displayed in app at signup)
+      usageCost: ~25% lower per-kWh rate vs. Pass; time-of-use discounts at select stations
+    - tier: Idle Fees
+      fee: per-minute fee after session ends if vehicle remains plugged in
+      usageCost: varies by station; waived for Pass/Pass+ members in some cases
+  partnerAPIAccess:
+    model: negotiated enterprise contract
+    selfServe: false
+    publicPricing: false
+    notes:
+      - OEM partners (Porsche, Nissan, Lucid, Ford, etc.) access APIs under
+        commercial agreements that may include volume commitments and SLAs
+      - Plug&Charge (ISO 15118) interoperability is facilitated via the Hubject
+        Intercharge network with separate roaming and interoperability terms
+      - Developer portal access at developer.electrifyamerica.com requires
+        OAuth2 credentials issued after partner onboarding
+  url: https://www.electrifyamerica.com/pricing/
+  notes:
+    - Per-kWh rates vary by state due to utility regulations; some states bill
+      per-minute instead of per-kWh
+    - Time-of-use pricing is available at select locations with rates that vary
+      by time of day
+    - Electrify America does not charge a transaction fee beyond the per-kWh rate
+    - Automaker-bundled charging plans (e.g., complimentary EA charging with
+      vehicle purchase) are separate commercial arrangements not reflected in
+      the above tiers

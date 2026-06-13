@@ -1,0 +1,67 @@
+plans:
+  - name: Guest / Pay-As-You-Go
+    description: >-
+      No membership required. Drivers can charge at any Electrify America
+      station using a credit or debit card (Visa, Mastercard, Amex, Discover)
+      or digital wallet (Apple Pay, Google Pay, Samsung Pay) directly at the
+      charger. Rates are higher than membership tiers. No monthly fee.
+    type: pay-as-you-go
+    url: https://www.electrifyamerica.com/pricing/
+    features:
+      - No registration or subscription required
+      - Credit/debit card or digital wallet payment at charger
+      - Access to all Electrify America stations
+      - No idle fee waiver
+      - Higher per-kWh rate than membership tiers
+
+  - name: Pass
+    description: >-
+      Free membership tier available through the Electrify America mobile app.
+      Provides a discounted per-kWh rate compared to guest pricing. No monthly
+      subscription fee. Recommended for drivers who charge occasionally on the
+      EA network.
+    type: free
+    url: https://www.electrifyamerica.com/pricing/
+    features:
+      - Free to join via Electrify America mobile app
+      - Discounted per-kWh rates vs. guest pricing
+      - Real-time charger availability in app
+      - Charger availability alerts
+      - In-app session management and history
+      - Plug&Charge support (where vehicle-enabled)
+
+  - name: Pass+
+    description: >-
+      Premium subscription tier with approximately 25% savings on charging
+      compared to Pass rates. Monthly subscription fee charged upon signup and
+      monthly thereafter. Best value for frequent Electrify America users.
+      Exact per-kWh rates and monthly fee amount vary and are displayed in the
+      app at time of signup.
+    type: paid
+    url: https://www.electrifyamerica.com/pricing/
+    features:
+      - ~25% savings per kWh compared to Pass tier
+      - All Pass tier features included
+      - Monthly subscription fee (amount displayed in app)
+      - Time-of-use pricing access for off-peak discounts
+      - Priority support access
+
+  - name: Partner / OEM Developer Access
+    description: >-
+      Enterprise and automotive OEM API access for integration with Electrify
+      America's Stations, Availability, Pricing, and Sessions APIs. Access is
+      gated behind the Electrify America developer portal at
+      developer.electrifyamerica.com and requires Auth0-based OAuth2
+      authentication. Partner agreements govern commercial terms. Used by
+      automotive brands (Porsche, Nissan, Lucid, Ford, etc.) to embed EA
+      charging data in vehicle navigation systems and brand apps.
+    type: partner
+    url: https://developer.electrifyamerica.com/
+    features:
+      - OAuth2 (Auth0) API authentication
+      - Stations API access (search, filter, details)
+      - Real-time Availability API access
+      - Pricing API access (TOU and standard rates)
+      - Sessions API access (start, stop, telemetry, history)
+      - Plug&Charge (ISO 15118) interoperability via Hubject
+      - Commercial terms negotiated per partner agreement
