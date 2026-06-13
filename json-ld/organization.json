@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Electrify America",
+  "url": "https://www.electrifyamerica.com",
+  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "description": "Electrify America is the largest open EV fast-charging network in the United States, operating more than 5,600 DC fast chargers at over 1,080 locations across the US and Canada.",
+  "foundingDate": "2017",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Volkswagen Group of America"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/electrify-america",
+    "https://x.com/ElectrifyAm"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "developer support",
+    "url": "https://developer.electrifyamerica.com"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Electrify America EV Charging Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Pass Plan",
+        "description": "Pay-as-you-go per-kWh EV charging plan",
+        "url": "https://www.electrifyamerica.com/pricing/"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pass+ Plan",
+        "description": "Monthly subscription EV charging plan with reduced per-kWh rates",
+        "url": "https://www.electrifyamerica.com/pricing/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Electrify America Partner API",
+  "description": "REST APIs enabling automotive OEMs and enterprise integrators to locate charging stations, check real-time charger availability, retrieve session pricing, and manage charging sessions. Authentication via OAuth2 / Auth0.",
+  "documentation": "https://developer.electrifyamerica.com/",
+  "termsOfService": "https://developer.electrifyamerica.com/",
+  "provider": {
+    "@type": "Organization",
+    "name": "Electrify America",
+    "url": "https://www.electrifyamerica.com"
+  },
+  "url": "https://api.electrifyamerica.com",
+  "offers": {
+    "@type": "Offer",
+    "description": "Partner access requires OAuth2 credentials issued through the Electrify America developer portal.",
+    "url": "https://developer.electrifyamerica.com"
+  },
+  "serviceOutput": [
+    {
+      "@type": "Dataset",
+      "name": "Charging Station Locations",
+      "description": "Geographic data for Electrify America charging stations including address, connectors, and amenities"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Real-Time Charger Availability",
+      "description": "Live connector status including available, in-use, faulted, and offline states"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Charging Session Data",
+      "description": "Session telemetry including energy delivered, duration, and cost"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Pricing Data",
+      "description": "Per-kWh and time-of-use pricing for charging stations"
+    }
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://developer.electrifyamerica.com",
+    "serviceType": "Developer Portal"
+  }
+}
