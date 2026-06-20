@@ -3,7 +3,7 @@
   "@type": "Organization",
   "name": "Electrify America",
   "url": "https://www.electrifyamerica.com",
-  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "logo": "https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg",
   "description": "Electrify America is the largest open EV fast-charging network in the United States, operating more than 5,600 DC fast chargers at over 1,080 locations across the US and Canada.",
   "foundingDate": "2017",
   "parentOrganization": {

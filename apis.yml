@@ -15,7 +15,7 @@ description: >-
   pass-based subscription plans (Pass and Pass+) with per-kWh pricing, and the
   Plug&Charge standard (ISO 15118) is supported at all stations for
   certificate-based auto-authentication.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Electric Vehicles
   - EV Charging
