@@ -116,6 +116,8 @@ apis:
       - type: Authentication
         url: https://developer.electrifyamerica.com/
 common:
+  - type: DomainSecurity
+    url: security/electrify-america-domain-security.yml
   - type: Website
     url: https://www.electrifyamerica.com
   - type: Portal
