@@ -107,7 +107,7 @@ apis:
     baseURL: https://api.electrifyamerica.com
     tags:
       - Pricing
-      - Time-of-Use
+      - Time-Of-Use
       - Session Cost
       - kWh Rates
     tags_raw:
