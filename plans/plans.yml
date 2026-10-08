@@ -69,3 +69,34 @@ plans:
       - Sessions API access (start, stop, telemetry, history)
       - Plug&Charge (ISO 15118) interoperability via Hubject
       - Commercial terms negotiated per partner agreement
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - metered
+  units: []
+  plans:
+  - name: Guest / Pay-As-You-Go
+    access: other
+    model: metered
+    model_how: stated
+    units: []
+    periods: []
+  - name: Pass
+    access: free
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Pass+
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Partner / OEM Developer Access
+    access: partner
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
