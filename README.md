@@ -1,4 +1,4 @@
-# Electrify America (electrify-america)
+# Electrify America
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,123 +66,104 @@
 
 Electrify America is the largest open EV fast-charging network in the United States, operating more than 5,600 DC fast chargers at over 1,080 locations across the US and Canada. Subsidiary of Volkswagen Group of America, the network offers charging speeds up to 350 kW and supports CCS, CHAdeMO, and NACS connectors. Electrify America provides REST APIs through a partner developer portal that enables automotive OEMs and enterprise integrators to locate charging stations, check real-time charger availability, retrieve session pricing, and manage charging sessions. Authentication is handled via OAuth2 / Auth0. A consumer-facing mobile app (iOS/Android) provides pass-based subscription plans (Pass and Pass+) with per-kWh pricing, and the Plug&Charge standard (ISO 15118) is supported at all stations for certificate-based auto-authentication.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/electrify-america/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/electrify-america/refs/heads/main/apis.yml)
+**Areas:** Electric Vehicles · EV Charging · Charging Stations · DC Fast Charging · Plug and Charge · Automotive · Energy · Transportation · Mobility
 
-## Tags
+## Electrify America on APIs.io
 
-- Electric Vehicles
-- EV Charging
-- Charging Stations
-- DC Fast Charging
-- Plug and Charge
-- Automotive
-- Energy
-- Transportation
-- Mobility
+Everything profiled for Electrify America is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/electrify-america/](https://apis.io/providers/electrify-america/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (4)
 
-- **Created:** 2026-06-13
-- **Modified:** 2026-06-13
+- [Electrify America Stations API](https://apis.io/apis/electrify-america/stations-api/) — REST API for locating and querying Electrify America charging stations. Enables partners and OEM integrators to search for stations by geographic area or…
+- [Electrify America Availability API](https://apis.io/apis/electrify-america/availability-api/) — Real-time charger availability API that returns live connector status (available, in-use, faulted, offline) for individual charging stations and EVSE units.…
+- [Electrify America Pricing API](https://apis.io/apis/electrify-america/pricing-api/) — API providing per-session and per-kWh pricing data for Electrify America charging stations. Supports time-of-use (TOU) pricing retrieval so partners and…
+- [Electrify America Sessions API](https://apis.io/apis/electrify-america/sessions-api/) — API for initiating, monitoring, and retrieving data for EV charging sessions. Enables partner applications to start and stop charging sessions, poll live…
 
-## APIs
+### Published properties
 
-### Electrify America Stations API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-REST API for locating and querying Electrify America charging stations. Enables partners and OEM integrators to search for stations by geographic area or coordinates, retrieve station details (address, connectors, amenities), and filter by connector type (CCS, CHAdeMO, NACS) or charging speed. Access requires OAuth2 partner credentials issued through the Electrify America developer portal.
+#### Security (1)
 
-- **Human URL:** [https://developer.electrifyamerica.com/](https://developer.electrifyamerica.com/)
-- **Base URL:** `https://api.electrifyamerica.com`
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Electrify America Domain Security](https://apis.io/security/electrify-america/electrify-america-domain-security/)
 
-- Charging Stations
-- Location
-- Station Search
-- Connectors
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://developer.electrifyamerica.com/)
-- [Authentication](https://developer.electrifyamerica.com/)
+- [Plans](https://apis.io/plans/electrify-america/plans/)
 
-### Electrify America Availability API
+#### Rate limits (1)
 
-Real-time charger availability API that returns live connector status (available, in-use, faulted, offline) for individual charging stations and EVSE units. Used by automotive OEM in-vehicle navigation and mobile app partners to surface live availability before and during a journey. Requires OAuth2 partner credentials.
+Published request limits.
 
-- **Human URL:** [https://developer.electrifyamerica.com/](https://developer.electrifyamerica.com/)
-- **Base URL:** `https://api.electrifyamerica.com`
+- [Rate Limits](https://apis.io/rate-limits/electrify-america/rate-limits/)
 
-#### Tags
+#### FinOps (1)
 
-- Real-Time
-- Availability
-- Charger Status
-- EVSE
+What the API costs to run, by operation.
 
-#### Properties
+- [Finops](https://apis.io/finops/electrify-america/finops/)
 
-- [Documentation](https://developer.electrifyamerica.com/)
-- [Press Release](https://media.electrifyamerica.com/releases/273)
+## Where to find this API
 
-### Electrify America Pricing API
-
-API providing per-session and per-kWh pricing data for Electrify America charging stations. Supports time-of-use (TOU) pricing retrieval so partners and in-vehicle systems can display accurate session cost estimates before a driver plugs in. Pricing varies by location, charger, and time of day.
-
-- **Human URL:** [https://developer.electrifyamerica.com/](https://developer.electrifyamerica.com/)
-- **Base URL:** `https://api.electrifyamerica.com`
-
-#### Tags
-
-- Pricing
-- Time-of-Use
-- Session Cost
-- kWh Rates
-
-#### Properties
-
-- [Documentation](https://developer.electrifyamerica.com/)
-- [Pricing](https://www.electrifyamerica.com/pricing/)
-
-### Electrify America Sessions API
-
-API for initiating, monitoring, and retrieving data for EV charging sessions. Enables partner applications to start and stop charging sessions, poll live session telemetry (energy delivered, duration, cost), and retrieve historical session records. Plug&Charge (ISO 15118) is supported at all stations and leverages the Hubject Intercharge PKI for certificate-based authentication as an alternative to session API token flows.
-
-- **Human URL:** [https://developer.electrifyamerica.com/](https://developer.electrifyamerica.com/)
-- **Base URL:** `https://api.electrifyamerica.com`
-
-#### Tags
-
-- Charging Sessions
-- Plug and Charge
-- ISO 15118
-- Session Management
-- Telemetry
-
-#### Properties
-
-- [Documentation](https://developer.electrifyamerica.com/)
-- [Authentication](https://developer.electrifyamerica.com/)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.electrifyamerica.com)
-- [Portal](https://developer.electrifyamerica.com)
-- [Sign Up](https://developer.electrifyamerica.com)
-- [Mobile App](https://apps.apple.com/us/app/electrify-america/id1458030456)
-- [Mobile App](https://play.google.com/store/apps/details?id=com.ea.evowner)
 - [Pricing](https://www.electrifyamerica.com/pricing/)
-- [Status Page](https://cloud.email.electrifyamerica.com/network-and-planned-maintenance)
-- [Newsroom](https://media.electrifyamerica.com/)
-- [F A Q](https://www.electrifyamerica.com/mobile-faq/)
-- [Station Locator](https://www.electrifyamerica.com/locate-charger/)
-- [LinkedIn](https://www.linkedin.com/company/electrify-america)
-- [Twitter](https://x.com/ElectrifyAm)
-- [Plans](plans/plans.yml)
-- [Rate Limits](rate-limits/rate-limits.yml)
-- [Fin Ops](finops/finops.yml)
+- [Status](https://cloud.email.electrifyamerica.com/network-and-planned-maintenance)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 19.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 72.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 20.2 |
+| Access clarity | 31.6 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/electrify-america/](https://apis.io/providers/electrify-america/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Electrify America: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/electrify-america/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
